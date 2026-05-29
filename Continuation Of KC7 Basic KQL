@@ -1,0 +1,29 @@
+Employees
+| where role == "CEO"
+
+InboundNetworkEvents
+| where timestamp between (datetime("2024-04-10T00:00:00") .. datetime("2024-04-11T00:00:00"))
+| where src_ip has "18.66.52.227"
+
+InboundNetworkEvents
+| where timestamp between (datetime("2024-04-10T00:00:00") .. datetime("2024-04-11T00:00:00"))
+| where url has_any("washington", "fluffy")
+| where src_ip has "18.66.52.227"
+
+PassiveDns
+| where ip == "18.66.52.227"
+
+Email
+| take 10
+
+Email
+| where link has "betterlyrics4u.com"
+
+let _targets = Email
+| where link has "betterlyrics4u.com"
+| distinct recipient;
+Employees
+| where email_addr in (_targets)
+
+###Here is the KQL language code. 
+-it goes through to CEO to then Changing the password about the user(rapper), all on KC7
