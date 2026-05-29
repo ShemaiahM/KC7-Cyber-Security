@@ -1,2 +1,6 @@
+### here i used simple KQL to see who was the CEO using simple KQL
+Kusto Query Language (KQL) - Kusto Query Language (KQL) is a powerful tool for exploring
+my data and discovering patterns, identifying anomalies and outliers. This language is used by Cyber Security Analysts Backend Developers.
+
 Employees
-| where role == "CEO" * here i used siimple KQL to see who was the CEO using simple KQL*
+| where role == "CEO"
