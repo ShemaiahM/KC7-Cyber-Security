@@ -1,0 +1,2 @@
+Employees
+| where role == "CEO" * here i used siimple KQL to see who was the CEO using simple KQL*
