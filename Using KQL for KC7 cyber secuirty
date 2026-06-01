@@ -1,16 +1,36 @@
+Follow up from KC7 intro "A Rap Beef: An Intro to Security Investigations"
+
+
+
+
+
 # Here i used simple KQL to see who was the CEO using simple KQL
-Kusto Query Language (KQL) - Kusto Query Language (KQL) is a powerful tool for exploring
-my data and discovering patterns, identifying anomalies and outliers. This language is used by Cyber Security Analysts Backend Developers.
+
+Kusto Query Language (KQL) - Kusto Query Language (KQL) is a powerful tool for exploring my data and discovering patterns, identifying anomalies and outliers. This language is used by Cyber Security Analysts Backend Developers.
 
 ### here is a baisc KQL script
+
 Employees 
+
 | where role == "CEO"
 
--As you can see 'Employees' I can use this to get the data of EMployees for the company
+
+-As you can see 'Employees' I can use this to get the data of Employees for the company
+
 - Then use | to find the source of data
-- Then i use pipeline character *'|'*, 
+
+- The pipeline character *'|'*, 
+
 - After that I then add *'where'* operator 
+
 -Now I use a column aka the *'role'* 
-- Then now use compsriosn operator like equality operater and value *'=="CEO"* ' 
--I get to employee needed which is the CEO
-- Important note KQL is casse sensitive
+
+- Then now use comparison operator like equality operator and value *'=="CEO"* ' 
+
+-I get to employee needed which is the CEO and their data i.e. their email address
+
+- Important note KQL is case sensitive
+
+
+
+#writeup #Lab #Cybersecurity #soc #junior #investigating #KQL #
